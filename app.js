@@ -13,10 +13,12 @@ const alienInvaders = [
     30,31,32,33,34,35,36,37,38,39
   ]
   
-  function draw() {
+function draw() {
     for (let i = 0; i < alienInvaders.length; i++) {
-      if(!aliensRemoved.includes(i)) {
-        squares[alienInvaders[i]].classList.add('invader')
-      }
+        if(!aliensRemoved.includes(i)) {
+            squares[alienInvaders[i]].classList.add('invader')
+        }
     }
-  }
+}
+
+draw()
